@@ -1,7 +1,12 @@
+#include <iostream>
+#include "Clonable.h"
+#include "StringBasic.h"
+
 #include "Thermometer.h"
 
-using namespace mas;
+namespace mas{
 
 Thermometer::~Thermometer(void)
 {
+}
 }

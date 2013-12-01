@@ -1,7 +1,11 @@
 #include "ThermometerSimple.h"
-#include "StringBasic"
+#include "StringBasic.h"
+#include <iostream>
+#include "Clonable.h"
 
-using namespace mas;
+#include "Thermometer.h"
+
+namespace mas{
 
 ThermometerSimple::ThermometerSimple(void): bottom(defaultBottom), top(defaultTop), tenths((bottom + top) * 5)
 {
@@ -33,7 +37,7 @@ void ThermometerSimple::CoolDown()
 
 void ThermometerSimple::Set(double degreesCelsius)
 {
-	tenths = static_cast <int> (degreesCelcius)
+	tenths = static_cast <int> (degreesCelsius);
 }
 
 double ThermometerSimple::Value() const
@@ -51,7 +55,8 @@ int ThermometerSimple::Top() const
 	return top;
 }
 
-void Display() const
+void ThermometerSimple::Display() const
 {
 	StringBasic::Fixed(tenths / 10.0, 1).Write();
+}
 }

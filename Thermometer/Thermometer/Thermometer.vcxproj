@@ -60,14 +60,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="StringBasic.cpp" />
     <ClCompile Include="Thermometer.cpp" />
+    <ClCompile Include="ThermometerSimple.cpp" />
     <ClCompile Include="UtilityFunctions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clonable.h" />
     <ClInclude Include="StringBasic.h" />
     <ClInclude Include="Thermometer.h" />
+    <ClInclude Include="ThermometerSimple.h" />
     <ClInclude Include="UtilityFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

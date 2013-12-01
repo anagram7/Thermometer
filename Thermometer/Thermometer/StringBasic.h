@@ -1,6 +1,10 @@
 #ifndef _H_StringBasic
 #define _H_StringBasic
 
+#include <iostream>
+#include <string>
+#include "Clonable.h"
+
 namespace mas {
 
 class StringBasic: public Clonable {

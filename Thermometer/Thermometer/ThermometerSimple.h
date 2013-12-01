@@ -3,8 +3,7 @@
 
 namespace mas
 {
-class ThermometerSimple :
-	public mas::Thermometer
+class ThermometerSimple:public Thermometer
 {
 public:
 	ThermometerSimple(void);
