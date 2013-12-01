@@ -60,13 +60,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\miguel\livro cplusplus\Strings\StringBasic.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\miguel\livro cplusplus\Utilities\UtilityFunctions.cpp" />
+    <ClCompile Include="StringBasic.cpp" />
+    <ClCompile Include="Thermometer.cpp" />
+    <ClCompile Include="UtilityFunctions.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\miguel\livro cplusplus\Strings\StringBasic.h" />
-    <ClInclude Include="..\..\..\..\..\..\miguel\livro cplusplus\Utilities\Clonable.h" />
-    <ClInclude Include="..\..\..\..\..\..\miguel\livro cplusplus\Utilities\UtilityFunctions.h" />
+    <ClInclude Include="Clonable.h" />
+    <ClInclude Include="StringBasic.h" />
+    <ClInclude Include="Thermometer.h" />
+    <ClInclude Include="UtilityFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

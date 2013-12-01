@@ -15,21 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\miguel\livro cplusplus\Strings\StringBasic.cpp">
+    <ClCompile Include="Thermometer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\miguel\livro cplusplus\Utilities\UtilityFunctions.cpp">
+    <ClCompile Include="StringBasic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilityFunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\miguel\livro cplusplus\Strings\StringBasic.h">
+    <ClInclude Include="Thermometer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\miguel\livro cplusplus\Utilities\Clonable.h">
+    <ClInclude Include="Clonable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\miguel\livro cplusplus\Utilities\UtilityFunctions.h">
+    <ClInclude Include="StringBasic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilityFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
