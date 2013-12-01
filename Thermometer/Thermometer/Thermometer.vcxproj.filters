@@ -33,6 +33,9 @@
     <ClCompile Include="ThermometerExtreme.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ThermometerMulti.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Thermometer.h">
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ThermometerExtreme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThermometerMulti.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
