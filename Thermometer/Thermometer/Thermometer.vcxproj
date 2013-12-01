@@ -62,6 +62,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StringBasic.cpp" />
+    <ClCompile Include="ThermoGraph.cpp" />
     <ClCompile Include="Thermometer.cpp" />
     <ClCompile Include="ThermometerExtreme.cpp" />
     <ClCompile Include="ThermometerMulti.cpp" />
@@ -71,6 +72,7 @@
   <ItemGroup>
     <ClInclude Include="Clonable.h" />
     <ClInclude Include="StringBasic.h" />
+    <ClInclude Include="ThermoGraph.h" />
     <ClInclude Include="Thermometer.h" />
     <ClInclude Include="ThermometerExtreme.h" />
     <ClInclude Include="ThermometerMulti.h" />
