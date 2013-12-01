@@ -1,10 +1,6 @@
 #include "Thermometer.h"
 
-
-Thermometer::Thermometer(void)
-{
-}
-
+using namespace mas;
 
 Thermometer::~Thermometer(void)
 {
