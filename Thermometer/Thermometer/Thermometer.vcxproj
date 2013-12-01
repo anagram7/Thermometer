@@ -63,6 +63,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StringBasic.cpp" />
     <ClCompile Include="Thermometer.cpp" />
+    <ClCompile Include="ThermometerExtreme.cpp" />
     <ClCompile Include="ThermometerSimple.cpp" />
     <ClCompile Include="UtilityFunctions.cpp" />
   </ItemGroup>
@@ -70,6 +71,7 @@
     <ClInclude Include="Clonable.h" />
     <ClInclude Include="StringBasic.h" />
     <ClInclude Include="Thermometer.h" />
+    <ClInclude Include="ThermometerExtreme.h" />
     <ClInclude Include="ThermometerSimple.h" />
     <ClInclude Include="UtilityFunctions.h" />
   </ItemGroup>

@@ -1,4 +1,6 @@
 #include <iostream>
+
+#include "ThermometerExtreme.h"
 #include "ThermometerSimple.h"
 #include "StringBasic.h"
 #include "Thermometer.h"
@@ -41,7 +43,49 @@ void ThermometerSimpleTest()
 	}
 }
 
+void ThermometerExtremeTest()
+{
+	mas::ThermometerExtreme t(-20, 60);
+
+	for(;;)
+	{
+		t.Display();
+		std::cout << std::endl;
+		mas::StringBasic s(32);
+		s.Accept("");
+		if(s.Empty())
+			continue;
+		if(s.First() == '!')
+			break;
+		switch (s.First())
+		{
+		case '+':
+			t.WarmUp();
+			break;
+		case '-':
+			t.CoolDown();
+			break;
+		case '?':
+			double x;
+			std::cout << "Temperature: ";
+			std::cin >> x;
+			mas::SkipLine();
+			if(t.Bottom() <= x && t.Top() >= x)
+				t.Set(x);
+			break;
+		case '#':
+			t.Reset();
+			break;
+		case '*':
+			t.ChangeMode();
+			break;
+		default:
+			break;
+		}
+	}
+}
+
 void main()
 {
-	ThermometerSimpleTest();
+	ThermometerExtremeTest();
 }
