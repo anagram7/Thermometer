@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include <iomanip>
+#include "ThermoGraph.h"
 #include "ThermometerExtreme.h"
 #include "ThermometerSimple.h"
 #include "ThermometerMulti.h"
@@ -140,7 +141,60 @@ void ThermometerMultiTest()
 	}
 }
 
+void ThermoGraphTest()
+{
+	mas::ThermoGraph t;
+
+	for(;;)
+	{
+		t.Display();
+		std::cout << std::endl;
+		mas::StringBasic s(32);
+		s.Accept("");
+		if(s.Empty())
+			continue;
+		if(s.First() == '!')
+			break;
+		switch (s.First())
+		{
+		case '+':
+			t.WarmUp();
+			break;
+		case '-':
+			t.CoolDown();
+			break;
+		case '?':
+			double x;
+			std::cout << "Temperature: ";
+			std::cin >> x;
+			mas::SkipLine();
+			t.Set(x);
+			break;
+		case '#':
+			t.Reset();
+			break;
+		case '=':
+			t.Take();
+			break;
+		case '%':
+			t.Plot();
+			break;
+		case '$':
+			std::cout << std::fixed << std::setprecision(1);
+			std::cout << t.Value();
+			if(t.Count() > 0)
+				std::cout << " " << t.Count() << " " << t.Min() << " " << t.Max () << " " 
+				<< t. Extent() << " " << t.Average() << " " << t.StandartDeviation();
+			std::cout << std::endl;
+			break;
+		default:
+			break;
+		}
+	}
+	
+}
+
 void main()
 {
-	ThermometerMultiTest();
+	ThermoGraphTest();
 }

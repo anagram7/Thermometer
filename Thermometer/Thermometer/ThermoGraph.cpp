@@ -47,7 +47,7 @@ void ThermoGraph::Reset()
 double ThermoGraph::Min() const
 {
 	unsigned index = 0;
-	for(unsigned i = 1; i < temperatures.size; i++)
+	for(unsigned i = 1; i < temperatures.size(); i++)
 		if(temperatures[i] < temperatures[index])
 			index = i;
 	return temperatures[index];
@@ -56,7 +56,7 @@ double ThermoGraph::Min() const
 double ThermoGraph::Max() const
 {
 	unsigned index = 0;
-	for(unsigned i = 1; i < temperatures.size; i++)
+	for(unsigned i = 1; i < temperatures.size(); i++)
 		if(temperatures[i] > temperatures[index])
 			index = i;
 	return temperatures[index];
@@ -96,7 +96,7 @@ int ThermoGraph::Count() const
 }
 
 
-void ThermoGraph::Plot(std::ostream& output = std::cout)
+void ThermoGraph::Plot(std::ostream& output)
 {
 	output << std::fixed << std::setprecision(1);
 	for(unsigned i = 0; i < temperatures.size(); i++)
